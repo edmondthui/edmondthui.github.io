@@ -1120,6 +1120,10 @@ button:focus {
 }
 
 @media (max-width: 991px) {
+
+	.mu-filter-item-description {
+		display: none;
+	}
 	
 	.navbar-default .mu-menu li a {
 		font-size: 14px;
