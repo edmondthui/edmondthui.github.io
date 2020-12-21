@@ -1070,9 +1070,6 @@ button:focus {
 /*--------------------*/
 
 @media (max-width: 1199px) {
-  .mu-filter-imglink {
-    display: none;
-  }
 
   .navbar-brand img {
     width: 145px;
