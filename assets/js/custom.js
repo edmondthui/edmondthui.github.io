@@ -155,14 +155,18 @@
 	/* ----------------------------------------------------------- */
 	/*  6. PORTFOLIO GALLERY
 	/* ----------------------------------------------------------- */ 
-		$('.filtr-container').filterizr();
+		$('.filtr-container').imagesLoaded(function() {
+			$('.filtr-container').filterizr();
+			
+			$('.mu-simplefilter li').click(function() {
+				$('.mu-simplefilter li').removeClass('active');
+				$(this).addClass('active');
+			});
+		})
 
 		//Simple filter controls
 
-	    $('.mu-simplefilter li').click(function() {
-	        $('.mu-simplefilter li').removeClass('active');
-	        $(this).addClass('active');
-	    });
+
 
 	/* ----------------------------------------------------------- */
 	/*  7. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
