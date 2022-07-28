@@ -759,7 +759,8 @@ button:focus {
 /*--------------------*/
 
 #mu-testimonials {
-  background-image: url("assets/images/testimonials-bg.jpeg");
+  /* background-image: url("assets/images/testimonials-bg.jpeg"); */
+  background-color: rgb(68, 104, 220);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -1070,7 +1071,6 @@ button:focus {
 /*--------------------*/
 
 @media (max-width: 1199px) {
-
   .navbar-brand img {
     width: 145px;
     margin-top: -10px;
