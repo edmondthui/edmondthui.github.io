@@ -1,0 +1,18 @@
+
+
+name: Generate xml sitemap
+on:
+  push:
+    branches: [ master ]
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+
+    steps:
+    - name: Generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1.8.4
+      with:
+        base-url-path: https://edmondhui.com/
+        include-pdf: false
